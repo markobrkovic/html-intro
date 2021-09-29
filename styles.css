@@ -8,13 +8,18 @@ html {
 
 body {
   font-size: 1.1rem;
-  background-color: black;
-  color: white;
+  background-color: rgba(26, 26, 26, 0.973);
+  color: rgb(228, 225, 225);
 }
 
 .heading {
   color: white;
-  background: grey;
+  border-top: 1px solid white;
+  transition: .5s all;
+}
+
+.heading:hover {
+  margin-left: 1rem;
 }
 
 img {
@@ -27,16 +32,31 @@ img:hover {
   z-index: 5;
 }
 
-input {
-  padding-left: 10px;
-}
-
 button {
   background-color: lawngreen;
   border: none;
-  padding: 5px 10px;
+  padding: .5rem .8rem;
 }
 
 button:hover {
   background-color: rgb(95, 187, 3);
+}
+
+.myGroup {
+  box-sizing: content-box;
+  padding: 2rem 10rem;
+  border: 5px solid rgba(255, 255, 255, 0.384);
+  background-color: #1d596b;
+  width: 20%;
+  padding-left: 1rem;
+  text-align: left;
+  
+}
+
+.card {
+  transition: all 1s;
+}
+
+.card:hover {
+  color:#D73D28;
 }
