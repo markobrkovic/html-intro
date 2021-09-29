@@ -1,23 +1,34 @@
-body  {
-    font-size: 1.1rem;
-    background-color: indianred;
+body {
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
 }
 
 .heading {
-    color: white;
-    background: grey;
+  color: white;
+  background: grey;
 }
 
 img {
-    height: 22vh;
+  height: 22vh;
+  transition: all 0.4s;
+}
+
+img:hover {
+  transform: scale(1.2);
+  z-index: 5;
 }
 
 input {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
-.myGroup {
-    border: 4px solid hotpink;
-    display: inline-block;
-    padding: 5px;
+button {
+  background-color: lawngreen;
+  border: none;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: rgb(95, 187, 3);
 }
