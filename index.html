@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Fische</title>
 </head>
 <body>
@@ -11,7 +12,8 @@
     <main>
 
         <section>
-            <h1>Meine Gruppe 🐟</h1>
+            <h1 class="heading">Meine Gruppe 🐟</h1>
+            <div class="myGroup">
                 <h2>Anke</h2>
                 <ul>
                     <li>Wohntort: <strong>Leipzig</strong></li>
@@ -24,10 +26,11 @@
                 <ul>
                     <li>Wohntort: <strong>München</strong></li>
                 </ul>
+            </div>
         </section>
 
         <div>
-            <h3>Freundschaftsanfrage</h3>
+            <h3 class="heading">Freundschaftsanfrage</h3>
             <form action="#">
                 <input type="text" id="text" placeholder="Name eingeben" required>
                 <button>Submit</button>
@@ -35,7 +38,7 @@
         </div>
 
         <section>
-            <h2>Einstellungen</h2>
+            <h2 class="heading">Einstellungen</h2>
             <div>
                 <h3>Wähle dein Profilbild aus</h3>
                 <img src="https://preview.redd.it/6u83n5eofwt31.png?auto=webp&s=0cc29373142066c94b864e191ce81b1fea75d2a1" alt="Boromir with sunglasses">
@@ -43,13 +46,14 @@
                 <form action="#">
                     <label for="photo">Boromir 1</label>
                     <input type="radio" id="photo" name="photo" value="1">
+
                     <label for="photo-2">Boromir 2</label>
                     <input type="radio" id="photo-2" name="photo" value="2">
                 </form>
             </div>
 
             <div>
-                <h3>Lautstärke für Benachrichtigungen Einstellungen</h3>
+                <h3 class="heading">Lautstärke für Benachrichtigungen einstellen</h3>
                 <input type="range">
             </div>
             <button>Änderungen speichern</button>
