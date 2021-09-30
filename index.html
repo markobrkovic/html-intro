@@ -5,32 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <title>Fishies</title>
   </head>
   <body>
-        <h1 class="heading">My group 🐟</h1>
+    <main>
+    <h1 class="heading">My group 🐟</h1>
+      <div class="container">
         <article class="card">
+          <div class="card__up">
+            <img src="https://a.cdn-hotels.com/gdcs/production149/d1041/2bcba6ff-7d32-46ad-a394-04ee3cad0ae0.jpg" alt="">
+          </div>
+          <div class="card__down">
           <h2>Anke</h2>
           <p>Lives in Leipzig</p>
+          </div>
         </article>
         <article class="card">
+          <div class="card__up">
+            <img src="https://www.22places.de/images/2017/04/duesseldorf-rhein-promenade.jpg" alt="">
+          </div>
+          <div class="card__down">
           <h2>Hendrik</h2>
           <p>Lives in Düsseldorf</p>
+          </div>
         </article>
         <article class="card">
+          <div class="card__up">
+            <img src="https://www.tripsavvy.com/thmb/vH1qnFyjFWkNrx9LgGWabSoq98c=/1414x1414/smart/filters:no_upscale()/GettyImages-962642536-33584e0b843c4c2ba25e7e7922c97745.jpg" alt="">
+          </div>
+          <div class="card__down">
           <h2>Marko</h2>
           <p>Lives in Munich</p>
+          </div>
         </article>
+    </div>
 
-
-      <div>
+      <div class="search">
         <h2 class="heading">Search new friends</h3>
         <form action="#">
           <input
             type="text"
             id="text"
             placeholder="Enter a name"
-            class="search"
+            class="search__input"
             required
           />
           <button>Submit</button>
@@ -41,7 +61,7 @@
         <div></div>
       </div>
       <section class="profile">
-        <h2 class="heading">Profile</h2>
+        <h2 class="heading">Profile Settings</h2>
         <div>
           <h3>Choose your profile picture</h3>
           <img
@@ -59,10 +79,10 @@
         </div>
 
         <div>
-          <h2 class="heading">Audio</h3>
+          <h2 class="heading">Audio Settings</h3>
           <input type="range" />
         </div>
-        <button>Änderungen speichern</button>
+        <button>Save changes</button>
       </section>
     </main>
 
@@ -71,8 +91,7 @@
         >©Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Consectetur error commodi, dolore odit impedit autem iste veniam
         delectus. Id repellat minus eveniet natus laborum earum amet laboriosam
-        quis vero quae!</small
-      >
+        quis vero quae!</small>
     </footer>
   </body>
 </html>
