@@ -7,27 +7,45 @@ html {
 }
 
 body {
-  font-size: 1.1rem;
-  background-color: rgba(26, 26, 26, 0.973);
-  color: rgb(228, 225, 225);
+  font-size: 16px;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.993), rgba(40, 180, 133, 0.89));
+  color: rgb(248, 248, 248);
+  
 }
 
 .heading {
-  color: white;
-  border-top: 1px solid white;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  color: rgb(245, 245, 245);
+  border-top: 1px solid rgb(235, 235, 235);
   transition: .5s all;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s;
 }
 
 .heading:hover {
   margin-left: 1rem;
+  color: rgb(255, 255, 255) ;
+  border-top: 1.5px solid rgb(255, 255, 255);
 }
 
-img {
-  height: 22vh;
-  transition: all 0.4s;
+form {
+  text-align: center;
 }
 
-img:hover {
+.whichBoromir > input:first-of-type {
+  margin-right: 10rem;
+}
+
+.search {
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+.profile img:hover {
   transform: scale(1.2);
   z-index: 5;
 }
@@ -35,14 +53,55 @@ img:hover {
 button {
   background-color: lawngreen;
   border: none;
+  border-radius: 5px;
+  margin: 1rem 0 1rem;
   padding: .5rem .8rem;
+  transition: all .3s;
 }
 
 button:hover {
-  background-color: rgb(95, 187, 3);
+  background-color: rgb(111, 221, 0);
 }
 
-.myGroup {
+.card {
+  transition: all .5s;
+  color: rgb(26, 121, 89);
+  background-color:rgba(235, 232, 232, 0.849);
+  border-radius: 5px;
+}
+
+.card:hover {
+  background-color: rgb(0, 108, 248);
+  color: white;
+  transform: scale(1.2);
+}
+
+
+.profile img {
+  height: 22vh;
+  margin-left: 2rem;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+section {
+  text-align: center;
+}
+
+article {
+  margin: 0;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid rgb(95, 187, 3);
+  justify-content: center;
+}
+
+article:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* .myGroup {
   box-sizing: content-box;
   padding: 2rem 10rem;
   border: 5px solid rgba(255, 255, 255, 0.384);
@@ -51,12 +110,4 @@ button:hover {
   padding-left: 1rem;
   text-align: left;
   
-}
-
-.card {
-  transition: all 1s;
-}
-
-.card:hover {
-  color:#D73D28;
-}
+} */

@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Fische</title>
+    <title>Fishies</title>
   </head>
   <body>
-    <main>
-      <section>
-        <h1 class="heading">Meine Gruppe 🐟</h1>
-        <div class="myGroup">
-          <article class="card">
-            <h2>Anke</h2>
-            <ul>
-              <li>Wohntort: <strong>Leipzig</strong></li>
-            </ul>
-          </article>
-          <article class="card">
-            <h2>Hendrik</h2>
-            <ul>
-              <li>Wohntort: <strong>Düsseldorf</strong></li>
-            </ul>
-          </article>
-          <article class="card">
-            <h2>Marko</h2>
-            <ul>
-              <li>Wohntort: <strong>München</strong></li>
-            </ul>
-          </article>
-        </div>
-      </section>
+        <h1 class="heading">My group 🐟</h1>
+        <article class="card">
+          <h2>Anke</h2>
+          <p>Lives in Leipzig</p>
+        </article>
+        <article class="card">
+          <h2>Hendrik</h2>
+          <p>Lives in Düsseldorf</p>
+        </article>
+        <article class="card">
+          <h2>Marko</h2>
+          <p>Lives in Munich</p>
+        </article>
+
 
       <div>
-        <h3 class="heading">Freundschaftsanfrage</h3>
+        <h2 class="heading">Search new friends</h3>
         <form action="#">
-          <input type="text" id="text" placeholder="Name eingeben" required />
+          <input
+            type="text"
+            id="text"
+            placeholder="Enter a name"
+            class="search"
+            required
+          />
           <button>Submit</button>
         </form>
       </div>
@@ -44,16 +40,16 @@
       <div>
         <div></div>
       </div>
-      <section>
-        <h2 class="heading">Einstellungen</h2>
+      <section class="profile">
+        <h2 class="heading">Profile</h2>
         <div>
-          <h3>Wähle dein Profilbild aus</h3>
+          <h3>Choose your profile picture</h3>
           <img
             src="https://preview.redd.it/6u83n5eofwt31.png?auto=webp&s=0cc29373142066c94b864e191ce81b1fea75d2a1"
             alt="Boromir with sunglasses"
           />
           <img src="https://i.imgflip.com/5ib9t1.jpg" alt="v2" />
-          <form action="#">
+          <form class="whichBoromir" action="#">
             <label for="photo">Boromir 1</label>
             <input type="radio" id="photo" name="photo" value="1" />
 
@@ -63,7 +59,7 @@
         </div>
 
         <div>
-          <h3 class="heading">Lautstärke für Benachrichtigungen einstellen</h3>
+          <h2 class="heading">Audio</h3>
           <input type="range" />
         </div>
         <button>Änderungen speichern</button>
